@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander | Fron-End Developer</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    
 </head>
 
 <body >
     <header>
         <div class="container-header-desktop">
-            <div><img src="" alt=""><a class="logo">Alexander</a></image>
+            <div data-animation="fade-right"><img loading="lazy" decoding="async" src="" alt="" ><a class="logo" >Alexander</a></image>
             </div>
             <input class="checkbox" type="checkbox" id="toogle-button" name="active">
             <label for="toogle-button" class="toogle-button">
@@ -30,11 +32,11 @@
             <div class="container-nav">
                 <nav>
                     <ul>
-                        <li><a>Home</a></li>
-                        <li><a>Sobre mi</a></li>
-                        <li><a>Portafolio</a></li>
-                        <li><a>Servicios</a></li>
-                        <li><a>Contacto</a></li>
+                        <li><a style="--i:1" href="#home">Home</a></li>
+                        <li><a style="--i:2" href="#about">Sobre mi</a></li>
+                        <li><a style="--i:3" href="#proyects">Proyectos</a></li>
+                        <li><a style="--i:4" href="#qualifications">Calificación</a></li>
+                        <li ><a style="--i:5" href="#contact">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,12 +46,12 @@
     <section class="container-home">
         <div class="container-home-left">
             <div>
-                <p>Hola</p>
-                <p>soy Alexander,</p>
-                <p>Fron-End Developer</p>
+                <p data-animation="fade-right"> Hola</p>
+                <p data-animation="fade-right"> soy Alexander,</p>
+                <p data-animation="fade-right"> Fron-End Developer</p>
             </div>
             <div class="container-social">
-                <a href="https://alexanderquispequino.github.io/dev/" target="_blank">
+                <a href="https://alexanderquispequino.github.io/dev/" target="_blank" data-animation="fade-right">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px"
                         height="20px" viewBox="0 0 20 20" version="1.1">
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -64,7 +66,7 @@
                         </g>
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com/in/alexander-quispe-quino/" target="_blank">
+                <a href="https://www.linkedin.com/in/alexander-quispe-quino/" target="_blank" data-animation="fade-right">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 48 48" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM11.5216 19.8778H16.9605V36.2196H11.5216V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM30.3131 19.4941C33.8922 19.4941 36.5754 21.8303 36.5754 26.8497L36.5752 36.2196H31.1365V27.4767C31.1365 25.2807 30.3494 23.7822 28.3805 23.7822C26.8779 23.7822 25.9829 24.7924 25.5898 25.7682C25.446 26.1178 25.4107 26.605 25.4107 27.0934V36.22H19.9711C19.9711 36.22 20.0428 21.4117 19.9711 19.8783H25.4107V22.1929C26.1325 21.0802 27.4254 19.4941 30.3131 19.4941Z"
@@ -74,18 +76,320 @@
 
             </div>
             <div>
-                <a class="btn-cv" href="assets/Alexander Quispe Quino - CV.pdf" target="_blank">Descargar CV</a>
+                <a class="btn-cv" href="#contact" data-animation="fade-up">Contáctame <i class="uil uil-message"></i></a>
             </div>
         </div>
 
 
-        <div class="container-home-right">
+        <div class="container-home-right" data-animation="fade-left">
             <div class="container-photo">
-                <img src="images/foto.jpg" alt="">
+                <img loading="lazy" decoding="async" src="images/foto.png" alt="">
             </div>
 
         </div>
     </section>
+
+    <section class="container-about" id="about">
+        <div class="container-morpho" data-animation="fade-right">
+            <div class=" morpho">
+                <img loading="lazy" decoding="async" src="images/about.png" alt="">
+            </div>
+
+        </div>
+        <div class="container-description " data-animation="fade-left">
+            <h2 class="title">Sobre mi</h2>
+            <p>Soy un Frontend Developer con sólida experiencia en CSS, HTML, JavaScript, React y GitHub. Capaz de crear interfaces atractivas y funcionales que mejoran la experiencia del usuario. Apasionado por la innovación tecnológica y dispuesto a aprender nuevas habilidades. Excelente capacidad de colaboración y comunicación, con experiencia en trabajar en equipos multidisciplinarios. Enfocado en ofrecer soluciones de alta calidad y cumplir con los plazos establecidos.</p>
+            <div>
+                <a class="btn-cv" href="assets/Alexander Quispe Quino - CV.pdf" target="_blank"> Descargar CV <i class="uil uil-cloud-download"></i></a>
+            </div>        
+        </div>
+    </section>
+
+    <section class="container-proyects" id="proyects">
+        <div class="">
+            <h2 class="title" data-animation="fade-right">Proyectos</h2>
+
+            <div class="container-proyects-items">
+                <div class="card-proyects" data-animation="fade-up">
+                    <img loading="lazy" decoding="async" src="images/eco.png" alt="">
+                </div>
+                <div class="card-proyects" data-animation="fade-up">
+                    <img loading="lazy" decoding="async" src="images/VacunaPeru.png" alt="">
+                </div>
+                <div class="card-proyects" data-animation="fade-up">
+                    <img loading="lazy" decoding="async" src="images/hydrex.png" alt="">
+                </div>
+                <div class="card-proyects" data-animation="fade-up">
+                    <img loading="lazy" decoding="async" src="images/Narradores.jpg" alt="">
+                </div>
+                <div class="card-proyects" data-animation="fade-up">
+                    <img loading="lazy" decoding="async" src="images/PUPSC-1.jpg" alt="">
+                </div>
+                <div class="card-proyects" data-animation="fade-up">
+                    <img loading="lazy" decoding="async" src="images/Lurazic.jpg" alt="">
+                </div>
+                
+            </div>
+      </div>
+    </section>
+
+    <section class="qualification section" id="qualifications">
+        <h2 class="section-title" data-animation="fade-up"> Cualidades</h2>
+
+
+
+        <div class="qualification-sections">
+            <div class="qualification-tabs">
+                
+                <div class="qualification-button button-flex qualification-active" data-animation="fade-up" data-target="#work">
+                    <i class="uil uil-bag"></i>
+                    Trabajo
+                </div>
+    <div class="qualification-button button-flex" data-animation="fade-up" data-target="#education">
+                    <i class="uil uil-graduation-cap"></i>
+                    Educación
+                </div>
+            </div>
+
+
+            
+            <div class="qualification-content qualification-active" data-content="" id="work">
+                <div class="qualification-data" data-animation="fade-up">
+                    <div>
+                        <h3 class="qualification-title">
+                            Front-End Developer | Wordpress
+                        </h3>
+                        <span class="qualification-subtitle">
+                            Orange 360
+                        </span>
+                        <div class="qualification-calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2019 - 2023
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="qualification-rounder">
+
+                        </span>
+                        <span class="qualification-line">
+
+                        </span>
+                    </div>
+
+                    <div></div>
+                </div>
+                <div class="qualification-data" data-animation="fade-up"><div></div>
+    
+                    <div>
+                        <span class="qualification-rounder">
+
+                        </span>
+                        <span class="qualification-line">
+                            
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="qualification-title">
+                            Front-End Developer
+                        </h3>
+                        <span class="qualification-subtitle">Agencia Digital Cr</span>
+                        <div class="qualification-calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2019 
+</div>
+                    </div>
+                    
+
+                </div>
+                <div class="qualification-data" data-animation="fade-up">
+                    <div>
+                        <h3 class="qualification-title">
+                            Front-End Developer
+                        </h3>
+                        <span class="qualification-subtitle">
+ECO PROYECT                        </span>
+                        <div class="qualification-calendar">
+                            <i class="uil uil-calendar-alt"></i> 2017 - 2018</div>
+                    </div>
+
+                    <div>
+                        <span class="qualification-rounder">
+
+                        </span>
+                        <span class="qualification-line">
+                            
+                        </span>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="qualification-data" data-animation="fade-up"><div></div>
+                    <div>
+                        <span class="qualification-rounder">
+
+                        </span>
+                        <span class="qualification-line">
+                            
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="qualification-title">
+                            Front-End Developer
+                        </h3>
+                        <span class="qualification-subtitle">
+                            Peru
+                        </span>
+                        <div class="qualification-calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2111 - 2124
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+
+            <div class="qualification-content" data-content="" id="education">
+                <div class="qualification-data" data-animation="fade-up">
+                    <div>
+                        <h3 class="qualification-title">
+                            Front-End Developer
+</h3>
+                        <span class="qualification-subtitle">Platzi</span>
+                        <div class="qualification-calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2018 - 2019
+</div>
+                    </div>
+
+                    <div>
+                        <span class="qualification-rounder">
+
+                        </span>
+                        <span class="qualification-line">
+
+                        </span>
+                    </div>
+
+                    <div></div>
+                </div>
+                <div class="qualification-data" data-animation="fade-up"><div></div>
+    
+                    <div>
+                        <span class="qualification-rounder">
+
+                        </span>
+                        <span class="qualification-line">
+                            
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="qualification-title">
+                           Wordpress
+                        </h3>
+                        <span class="qualification-subtitle">Platzi</span>
+                        <div class="qualification-calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2017 - 2018
+</div>
+                    </div>
+                    
+
+                </div>
+                <div class="qualification-data" data-animation="fade-up">
+                    <div>
+                        <h3 class="qualification-title">Ingles</h3>
+                        <span class="qualification-subtitle">
+                          Britanico
+                        </span>
+                        <div class="qualification-calendar">
+                            <i class="uil uil-calendar-alt"></i> 2017</div>
+                    </div>
+
+                    <div>
+                        <span class="qualification-rounder">
+
+                        </span>
+                        <span class="qualification-line">
+                            
+                        </span>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="qualification-data" data-animation="fade-up"><div></div>
+                    <div>
+                        <span class="qualification-rounder">
+
+                        </span>
+                        <span class="qualification-line">
+                            
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="qualification-title">Software y Sistemas</h3>
+                        <span class="qualification-subtitle">Sise</span>
+                        <div class="qualification-calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2015 - 2017
+</div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+    </section>
+    
+    <section class="container-contact" id="contact">
+        <h2 class="title" data-animation="fade-right">Contacto</h2>
+        <div class="container-grid-contact">
+            <div class="container-items-contact">
+                <div class="items-contact">
+                    <a href="tel:+51 994441385" target="_blank" data-animation="fade-right">
+                        <i class="uil uil-mobile-android"></i>+51 994441385
+                    </a>
+                    <a href="mailto:Alessix.291296@gmail.com" target="_blank" data-animation="fade-right">
+                        <i class="uil uil-envelope-minus"></i>Alessix.291296@gmail.com
+                    </a>
+                    <a  target="_blank" data-animation="fade-right">
+                        <i class="uil uil-location-pin-alt"></i> Lima, Perú
+                    </a>
+    
+                </div>
+            </div>
+            <div class="container-form-contact">
+                <form class="">
+                    
+                    <div data-animation="fade-up" class="container-input-name">
+                        <input class="input-contact" id="grid-first-name" type="text" placeholder="Nombre">
+                         <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p>  -->
+                      </div>
+                    <div data-animation="fade-up" class="container-input-lastname">
+                        <input class="input-contact" id="grid-first-name" type="text" placeholder="Apellidos">
+                         <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p>  -->
+                      </div>
+                      <div data-animation="fade-up" class="container-input-email">
+                        <input class="input-contact" id="grid-last-name" type="text" placeholder="Correo">
+                      </div>
+                    <div data-animation="fade-up" class="container-input-proyect">
+                    
+                        <input class="input-contact" id="grid-last-name" type="text" placeholder="Proyecto">
+                         <!-- <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p> -->
+                      
+                    </div >
+                    
+                      <div data-animation="fade-up" class="container-input-message">
+                        <textarea rows="6"  class="input-contact" id="grid-last-name" placeholder="Mensaje">
+                        </textarea>
+                      </div>
+                      
+                    
+                    
+                  </form>
+            </div>
+        </div>
+    
+    </section>
+    
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
