@@ -497,8 +497,27 @@ svg path {
     'name lastname'
     'email email'
     'proyect proyect'
-    'message message';
-grid-gap: 1.5rem 1rem;
+    'message message'
+    'boton-submit boton-submit';
+     grid-gap: 1.5rem 1rem;
+}
+
+.btn-submit {
+    background: #00a782;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    width: 100%;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    grid-area: boton-submit;
+    padding: 1.1rem 1.5rem;
 }
 
 .container-input-name{
@@ -760,7 +779,8 @@ p {
     'lastname lastname'
     'email email'
     'proyect proyect'
-    'message message';
+    'message message'
+    'boton-submit boton-submit';
 }
 }
 
