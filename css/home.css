@@ -550,6 +550,7 @@ svg path {
     background: #3b3d46;
     box-sizing: border-box;
     resize: none;
+    text-align: left;
 }
 
 input[type=text]{
