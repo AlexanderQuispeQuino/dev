@@ -69,3 +69,37 @@ const observer = new IntersectionObserver((entries, observer) =>{
         observer.observe(element); 
     })
 
+
+// logica para el Formulario
+    document.getElementById("sendButton").addEventListener("click", function () {
+      // Obtiene los valores del formulario
+      const name = document.getElementById("name").value.trim();
+      const lastname = document.getElementById("lastname").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const project = document.getElementById("project").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      // Validación básica
+      if (!name || !lastname || !email || !project || !message) {
+        alert("Por favor, completa todos los campos.");
+        return;
+      }
+
+      // Crea el mensaje para WhatsApp
+      const whatsappMessage = `
+        Hola, mi nombre es ${name} ${lastname}.
+        Mi correo es: ${email}.
+        Estoy interesado/a en: ${project}.
+        Mi mensaje es: ${message}.
+      `.replace(/\s+/g, ' ').trim();
+
+      // Número de teléfono de destino (cambiarlo por el tuyo)
+      const phoneNumber = "51994441385"; // Cambia por tu número incluyendo el código de país
+
+      // URL de WhatsApp
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+      // Redirige al usuario a WhatsApp
+      window.open(whatsappURL, "_blank");
+    });
+
