@@ -1,0 +1,77 @@
+.elementor-29 .elementor-element.elementor-element-796fe2b{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--gap:0px 0px;--row-gap:0px;--column-gap:0px;}.elementor-29 .elementor-element.elementor-element-796fe2b:not(.elementor-motion-effects-element-type-background), .elementor-29 .elementor-element.elementor-element-796fe2b > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-accent );}.elementor-29 .elementor-element.elementor-element-3d0371a{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:center;}.elementor-widget-theme-site-logo .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-29 .elementor-element.elementor-element-4821f02{width:auto;max-width:auto;text-align:left;}.elementor-29 .elementor-element.elementor-element-4821f02.elementor-element{--align-self:center;}.elementor-29 .elementor-element.elementor-element-4821f02 img{width:310px;max-width:100%;height:45px;object-fit:cover;object-position:center center;}.elementor-29 .elementor-element.elementor-element-8367dd8{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--align-items:flex-end;}.elementor-widget-nav-menu .elementor-nav-menu .elementor-item{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item{color:var( --e-global-color-text );fill:var( --e-global-color-text );}.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:hover,
+					.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item.elementor-item-active,
+					.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item.highlighted,
+					.elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:focus{color:var( --e-global-color-accent );fill:var( --e-global-color-accent );}.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:before,
+					.elementor-widget-nav-menu .elementor-nav-menu--main:not(.e--pointer-framed) .elementor-item:after{background-color:var( --e-global-color-accent );}.elementor-widget-nav-menu .e--pointer-framed .elementor-item:before,
+					.elementor-widget-nav-menu .e--pointer-framed .elementor-item:after{border-color:var( --e-global-color-accent );}.elementor-widget-nav-menu{--e-nav-menu-divider-color:var( --e-global-color-text );}.elementor-widget-nav-menu .elementor-nav-menu--dropdown .elementor-item, .elementor-widget-nav-menu .elementor-nav-menu--dropdown  .elementor-sub-item{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-29 .elementor-element.elementor-element-0f0cc10 .elementor-menu-toggle{margin:0 auto;}.elementor-29 .elementor-element.elementor-element-0f0cc10 .elementor-nav-menu--main .elementor-item:hover,
+					.elementor-29 .elementor-element.elementor-element-0f0cc10 .elementor-nav-menu--main .elementor-item.elementor-item-active,
+					.elementor-29 .elementor-element.elementor-element-0f0cc10 .elementor-nav-menu--main .elementor-item.highlighted,
+					.elementor-29 .elementor-element.elementor-element-0f0cc10 .elementor-nav-menu--main .elementor-item:focus{color:var( --e-global-color-text );fill:var( --e-global-color-text );}.elementor-29 .elementor-element.elementor-element-0f0cc10 .elementor-nav-menu--main .elementor-item.elementor-item-active{color:var( --e-global-color-text );}.elementor-29 .elementor-element.elementor-element-0f0cc10 .elementor-nav-menu--main .elementor-item{padding-left:0px;padding-right:0px;}.elementor-29 .elementor-element.elementor-element-0f0cc10{--e-nav-menu-horizontal-menu-item-margin:calc( 25px / 2 );}.elementor-29 .elementor-element.elementor-element-0f0cc10 .elementor-nav-menu--main:not(.elementor-nav-menu--layout-horizontal) .elementor-nav-menu > li:not(:last-child){margin-bottom:25px;}.elementor-29 .elementor-element.elementor-element-0f0cc10 .elementor-nav-menu--dropdown li:not(:last-child){border-style:none;}.elementor-widget-button .elementor-button{background-color:var( --e-global-color-accent );font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-29 .elementor-element.elementor-element-c138a90 .elementor-button{background-color:#140C1C00;font-family:"Roboto", Sans-serif;font-size:2rem;font-weight:400;}.elementor-theme-builder-content-area{height:400px;}.elementor-location-header:before, .elementor-location-footer:before{content:"";display:table;clear:both;}@media(max-width:1024px){.elementor-29 .elementor-element.elementor-element-4821f02 img{width:180px;}.elementor-29 .elementor-element.elementor-element-8367dd8{--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-29 .elementor-element.elementor-element-c138a90.elementor-element{--align-self:flex-end;}.elementor-29 .elementor-element.elementor-element-c138a90 .elementor-button{line-height:0rem;letter-spacing:0px;border-radius:0px 0px 0px 0px;padding:0px 0px 0px 0px;}}@media(min-width:768px){.elementor-29 .elementor-element.elementor-element-3d0371a{--width:18%;}.elementor-29 .elementor-element.elementor-element-8367dd8{--width:82%;}}@media(max-width:1024px) and (min-width:768px){.elementor-29 .elementor-element.elementor-element-3d0371a{--width:60%;}.elementor-29 .elementor-element.elementor-element-8367dd8{--width:40rem;}}@media(max-width:767px){.elementor-29 .elementor-element.elementor-element-3d0371a{--width:50%;}.elementor-29 .elementor-element.elementor-element-4821f02 img{width:140px;height:40px;}.elementor-29 .elementor-element.elementor-element-8367dd8{--width:50%;}}/* Start custom CSS */.header-fixed{
+    position: absolute !important;
+    width: 1349px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+    z-index: 1;
+    background: transparent !important;
+}
+
+
+.header-fixed.fixed {
+    background-color: var( --e-global-color-accent ) !important;
+    position: fixed !important;
+    box-shadow: 0px 0px 5px -4px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: 0px 0px 5px -4px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 0px 5px -4px rgba(0, 0, 0, 0.29);
+    transition: background-color .3s ease-in-out;
+}
+
+
+.menu-custom ul > li > a {
+    display: flex !important;
+    text-decoration: none;
+    position: relative;
+    transition: .5s !important;
+}
+
+.menu-custom  ul > li:hover > a:before {
+    transform-origin: left !important;
+    transform: scaleX(1);
+}
+
+.menu-custom   ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background: linear-gradient(160deg,var(--e-global-color-primary) 0%, var(--e-global-color-secondary) 100%)  !important;
+    bottom: 10px;
+    left:  0 !important;
+    transform-origin: right !important ;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    
+    .burguer-buttom div{
+        display:flex !important;
+    }
+    
+    .display-none{
+        display: none !important;
+    }
+
+    .elementor-nav-menu--dropdown{
+        position: absolute !important;
+        left: 0 !important;
+        right:0 !important;
+        width:100% !important;
+        max-width:100% !important;
+    }
+}/* End custom CSS */
