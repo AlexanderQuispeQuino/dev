@@ -1,0 +1,294 @@
+.firt-section {
+  padding: 6.5rem 0 0 !important;
+}
+
+.elementor-6 .elementor-element.elementor-element-240b19c {
+  justify-content: start !important;
+}
+
+.elementor-6
+  .elementor-element.elementor-element-d685afb
+  .elementor-heading-title {
+  line-height: 4.3rem !important;
+}
+
+.elementor-widget-container p {
+  margin-bottom: 0.5rem !important;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    padding: 0rem !important;
+  }
+
+  .elementor-6
+    .elementor-element.elementor-element-d685afb
+    .elementor-heading-title {
+    line-height: 2.5rem !important;
+  }
+
+  .firt-section {
+    padding: 3.5rem 1rem 0 !important;
+  }
+
+  .elementor-6
+    .elementor-element.elementor-element-8a57617
+    > .elementor-widget-container {
+    margin: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .firt-section {
+    align-content: center !important;
+  }
+
+  .slide-roll-text {
+    min-width: auto !important;
+    animation: slideRoll 10s linear infinite !important;
+  }
+}
+
+/* INICIO SECTION FRANJA DE TEXTO ANIMADO */
+
+.slide-roll-container {
+  background: black;
+  padding: 1.5rem 0;
+  color: white;
+  overflow: hidden; /* Oculta el texto que se sale del contenedor */
+  white-space: nowrap; /* Evita que los textos salten de línea */
+  position: relative;
+}
+
+/* Contenedor del texto animado */
+.slide-roll-text {
+  display: flex;
+  gap: 1rem; /* Espacio entre elementos */
+  min-width: max-content; /* Asegura que el texto no se corte */
+  animation: slideRoll 30s linear infinite;
+}
+
+/* Hace que los h1 y h2 estén en una sola línea */
+.slide-roll-text h1,
+.slide-roll-text h2 {
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 1.05rem;
+}
+/* Agrega la bolita (•) entre frases */
+.slide-roll-text h1::after,
+.slide-roll-text h2::after {
+  content: "•"; /* La bolita separadora */
+  color: white; /* Color de la bolita */
+  font-weight: bold;
+  margin-left: 1rem; /* Espacio a la derecha de cada frase */
+}
+
+/* Elimina la bolita del último elemento */
+.slide-roll-text h2:last-child::after {
+  content: "";
+}
+
+/* Animación sin cortes bruscos */
+@keyframes slideRoll {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* FIN SECTION FRANJA DE TEXTO ANIMADO */
+
+/* INICIO SECTION PROYECTOS */
+.container-proyects-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.5rem 2rem;
+  align-items: center;
+  justify-items: center;
+  margin: 3rem 0;
+}
+
+.card-proyects {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 1px 17px 0px rgb(0 0 0 / 20%);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card-proyects img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: top;
+  border-radius: inherit;
+  transition: opacity 0.3s ease-in-out;
+}
+
+[data-animation="fade-up"].fade-up-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-animation="fade-up"] {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.e-container-custom {
+  gap: var(--row-gap) var(--column-gap);
+  height: 100%;
+  margin: 0 auto;
+  max-width: var(--content-width);
+  width: 100%;
+  padding-block-end: var(--padding-block-end);
+  padding-block-start: var(--padding-block-start);
+  text-align: var(--text-align);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--e-global-color-primary) var(--e-global-color-secondary) !important;
+}
+
+.view-full {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-family: var(--e-global-typography-accent-font-family), Sans-serif;
+  background-size: 200%;
+  background-image: linear-gradient(
+    to right,
+    var(--e-global-color-primary) 0%,
+    var(--e-global-color-secondary) 51%,
+    var(--e-global-color-primary) 100%
+  );
+  border: none;
+  border-radius: 50px;
+  padding: 15px 35px !important;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card-proyects:hover .view-full {
+  opacity: 1;
+}
+
+/* Popup */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(60 26 126 / 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-out, visibility 0.5s;
+  z-index: 2;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.6s ease-in, visibility 0.6s;
+}
+
+.popup-content {
+  position: relative;
+  background: white;
+  max-width: 85%;
+  max-height: 80%;
+  overflow-y: auto;
+  border-radius: 15px;
+}
+
+.popup-content img {
+  width: 100%;
+  display: block;
+}
+
+.close-popup {
+  position: fixed;
+  top: 35px;
+  right: 90px;
+  font-size: 45px;
+  cursor: pointer;
+  color: #3b226d;
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.card-proyects:hover > img {
+  filter: blur(2px) opacity(0.9);
+}
+
+@media screen and (max-width: 550px) {
+  .container-proyects-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-proyects {
+    display: flex;
+    height: auto;
+  }
+
+  .card-proyects img {
+    object-fit: contain;
+  }
+
+  .e-container-custom {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .view-full {
+    padding: 15px 30px !important;
+    font-size: 1rem;
+  }
+
+  .container-proyects-items {
+    grid-gap: 2rem 1.5rem;
+  }
+
+  .close-popup {
+    top: 40px;
+    right: 10px;
+  }
+}
+
+/* FIN SECTION PROYECTOS */
+
+/* INICIO PARA EL FORM PARA QUITAR FLECHAS DE INPUT DE TIPO NUMBER(CELULAR)*/
+#form-field-celular::-webkit-inner-spin-button,
+#form-field-celular::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* FIN PARA EL FORM PARA QUITAR FLECHAS DE INPUT DE TIPO NUMBER(CELULAR)*/
